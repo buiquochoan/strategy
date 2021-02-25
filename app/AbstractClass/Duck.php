@@ -35,10 +35,6 @@ abstract class Duck
 		return $this->quack = $quack;
 	}
 
-	public abstract function swim();
-
-	public abstract function display();
-
 	public function performFly() {
 		return $this->fly->fly();
 	}
