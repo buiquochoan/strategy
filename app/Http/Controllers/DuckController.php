@@ -34,10 +34,8 @@ class DuckController extends Controller
 
 	public function action()
 	{
-		$this->malla_duck->setFly(new FlyWithWings());
 		$this->malla_duck->performFly();
 		echo "<br>";
-		$this->malla_duck->setQuack(new MuteQuack());
 		$this->malla_duck->performQuack();
 	}
 }

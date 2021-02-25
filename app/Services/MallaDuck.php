@@ -9,6 +9,8 @@
 namespace App\Services;
 
 use App\AbstractClass\Duck;
+use App\StrategyClass\FlyNoWay;
+use App\StrategyClass\Quack;
 
 /**
  * Class MallaDuck
@@ -16,6 +18,12 @@ use App\AbstractClass\Duck;
  */
 class MallaDuck extends Duck
 {
+	public function __construct()
+	{
+		$this->fly = new FlyNoWay();
+		$this->quack = new Quack();
+	}
+
 	public function display()
 	{
 		// TODO: Implement display() method.
