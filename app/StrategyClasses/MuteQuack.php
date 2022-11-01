@@ -1,12 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ADMIN
- * Date: 2/23/2021
- * Time: 8:31 PM
- */
 
-namespace App\StrategyClass;
+namespace App\StrategyClasses;
 
 use App\Interfaces\QuackBehavior;
 

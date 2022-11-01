@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\DuckController;
+use App\Http\Controllers\StrategyController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +18,8 @@ use App\Http\Controllers\DuckController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/strategy', [DuckController::class, 'action']);
+Route::get('/develop', [\App\Http\Controllers\DevelopController::class, 'action']);
+Route::get('/singleton', [\App\Http\Controllers\SingletonController::class, 'action']);
+Route::get('/strategy', [StrategyController::class, 'action']);
+Route::get('/simple-factory', [\App\Http\Controllers\SimpleFactoryController::class, 'action']);
+Route::get('/factory-method', [\App\Http\Controllers\FactoryMethodController::class, 'action']);

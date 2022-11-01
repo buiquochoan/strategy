@@ -1,16 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ADMIN
- * Date: 2/25/2021
- * Time: 7:39 PM
- */
 
-namespace App\Services;
+namespace App\Services\Strategies;
 
 use App\AbstractClass\Duck;
-use App\StrategyClass\FlyNoWay;
-use App\StrategyClass\Quack;
+use App\StrategyClasses\FlyNoWay;
+use App\StrategyClasses\Quack;
 
 /**
  * Class MallaDuck
@@ -18,6 +12,9 @@ use App\StrategyClass\Quack;
  */
 class MallaDuck extends Duck
 {
+    /**
+     * MallaDuck constructor.
+     */
 	public function __construct()
 	{
 		$this->fly = new FlyNoWay();

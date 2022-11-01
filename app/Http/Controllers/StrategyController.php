@@ -1,22 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: ADMIN
- * Date: 2/23/2021
- * Time: 10:28 PM
- */
 
 namespace App\Http\Controllers;
 
-use App\Services\MallaDuck;
-use App\Services\ModelDuck;
-use App\StrategyClass\FlyNoWay;
+use App\Services\Strategies\MallaDuck;
+use App\Services\Strategies\ModelDuck;
+use App\StrategyClasses\FlyNoWay;
 
 /**
  * Class DuckController
  * @package App\Http\Controllers
  */
-class DuckController extends Controller
+class StrategyController extends Controller
 {
 	/**
 	 * @var MallaDuck
@@ -25,16 +19,20 @@ class DuckController extends Controller
 
 	protected $model_duck;
 
-	/**
-	 * DuckController constructor.
-	 * @param MallaDuck $mallaDuck
-	 */
+    /**
+     * DuckController constructor.
+     * @param MallaDuck $malla_duck
+     * @param ModelDuck $model_duck
+     */
 	public function __construct(MallaDuck $malla_duck, ModelDuck $model_duck)
 	{
 		$this->malla_duck = $malla_duck;
 		$this->model_duck = $model_duck;
 	}
 
+    /**
+     * action
+     */
 	public function action()
 	{
 		$this->malla_duck->performFly();
