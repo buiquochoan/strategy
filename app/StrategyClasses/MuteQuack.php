@@ -12,6 +12,6 @@ class MuteQuack implements QuackBehavior
 {
 	public function quack()
 	{
-		echo "i can't make a sound";
+		echo "i can't make a sound <br>";
 	}
 }

@@ -3,8 +3,8 @@
 namespace App\Services\Strategies;
 
 use App\AbstractClass\Duck;
-use App\StrategyClasses\FlyNoWay;
-use App\StrategyClasses\Quack;
+use App\Interfaces\FlyBehavior;
+use App\Interfaces\QuackBehavior;
 
 /**
  * Class MallaDuck
@@ -15,11 +15,12 @@ class MallaDuck extends Duck
     /**
      * MallaDuck constructor.
      */
-	public function __construct()
+	public function __construct(QuackBehavior $quack, FlyBehavior $fly)
 	{
-		$this->fly = new FlyNoWay();
-		$this->quack = new Quack();
+		$this->fly = $fly;
+		$this->quack = $quack;
 	}
+
 
 	public function display()
 	{

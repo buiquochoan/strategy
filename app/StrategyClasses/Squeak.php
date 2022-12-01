@@ -12,6 +12,6 @@ class Squeak implements QuackBehavior
 {
 	public function quack()
 	{
-		echo "i squeak";
+		echo "i squeak <br>";
 	}
 }

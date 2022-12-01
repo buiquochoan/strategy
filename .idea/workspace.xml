@@ -1,39 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80fd3882-d37e-4551-991b-7c853a2cc1e7" name="Default Changelist" comment="declare malladuck in malladuck class">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/FactoryMethodClasses/Developer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/FactoryMethodClasses/HiringManager.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/FactoryMethodClasses/Interviewer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/FactoryMethodClasses/Tester.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/DevelopController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/FactoryMethodController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SimpleFactoryController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/SingletonController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/DevelopService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/FactoryMethods/DevelopManagerService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/FactoryMethods/TesterManagerService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/OverloadPhp.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/SimpleFactories/SimpleFactoryService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/Singletons/SingletonService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Services/SubDevelopService.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SimpleFactoryClasses/CheesePizza.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SimpleFactoryClasses/ClamPizza.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/SimpleFactoryClasses/SimplePizzaFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/strategy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/strategy.iml" afterDir="false" />
+    <list default="true" id="80fd3882-d37e-4551-991b-7c853a2cc1e7" name="Default Changelist" comment="factory method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DuckController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StrategyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/MallaDuck.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Strategies/MallaDuck.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/ModelDuck.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/Strategies/ModelDuck.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/StrategyClass/FlyNoWay.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StrategyClasses/FlyNoWay.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/StrategyClass/FlyWithWings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StrategyClasses/FlyWithWings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/StrategyClass/MuteQuack.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StrategyClasses/MuteQuack.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/StrategyClass/Quack.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StrategyClasses/Quack.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/StrategyClass/Squeak.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/StrategyClasses/Squeak.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -271,7 +240,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/xampp/htdocs/web/api-edutalk" />
+    <property name="last_opened_file_path" value="D:/xampp/htdocs/web/client-backend" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -311,7 +280,8 @@
       <workItem from="1614259614705" duration="54000" />
       <workItem from="1614259706987" duration="2666000" />
       <workItem from="1666927474397" duration="4765000" />
-      <workItem from="1667294549365" duration="4190000" />
+      <workItem from="1667294549365" duration="4492000" />
+      <workItem from="1667353644826" duration="958000" />
     </task>
     <task id="LOCAL-00001" summary="declare malladuck in malladuck class">
       <created>1614261316465</created>
@@ -320,7 +290,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614261316465</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="factory method">
+      <created>1667300424772</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667300424772</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -391,7 +368,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="declare malladuck in malladuck class" />
-    <option name="LAST_COMMIT_MESSAGE" value="declare malladuck in malladuck class" />
+    <MESSAGE value="factory method" />
+    <option name="LAST_COMMIT_MESSAGE" value="factory method" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/StrategyClass/FlyNoWay.php">

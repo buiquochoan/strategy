@@ -3,9 +3,8 @@
 namespace App\Services\Strategies;
 
 use App\AbstractClass\Duck;
-use App\StrategyClasses\FlyNoWay;
-use App\StrategyClasses\FlyWithWings;
-use App\StrategyClasses\Quack;
+use App\Interfaces\FlyBehavior;
+use App\Interfaces\QuackBehavior;
 
 /**
  * Class ModelDuck
@@ -13,9 +12,9 @@ use App\StrategyClasses\Quack;
  */
 class ModelDuck extends Duck
 {
-	public function __construct()
+	public function __construct(QuackBehavior $quack, FlyBehavior $fly)
 	{
-		$this->fly = new FlyWithWings();
-		$this->quack = new Quack();
+		$this->fly = $fly;
+		$this->quack = $quack;
 	}
 }
